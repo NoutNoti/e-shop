@@ -1,0 +1,524 @@
+html
+  scroll-behavior: smooth
+body
+  font-family: $font-family-main
+a
+  text-decoration: none
+  &:hover
+    text-decoration: none
+ul, li
+  margin: 0
+  padding: 0
+.nav-link
+  padding: 0
+  margin: 0
+.up-arrow
+  position: fixed
+  width: 60px
+  height: 60px
+  bottom: 20px
+  right: -100px
+  background-color: $font-color-main
+  cursor: pointer
+  z-index: 100000
+  transition: .3s all
+  color: $font-color-second
+  font-size: 45px
+  text-align: center
+  align-items: center
+  &:hover
+    opacity: 1
+    color: $font-color-second
+    text-decoration: none
+.up-arrow_active
+  position: fixed
+  width: 60px
+  height: 60px
+  bottom: 20px
+  right: 20px
+  background-color: $font-color-main
+  cursor: pointer
+  z-index: 100000
+  transition: .5s all
+  opacity: 0.6
+  &:hover
+    opacity: 1
+    color: $font-color-second
+    text-decoration: none
+.logo
+  font-size: 20px
+  &__link
+    font-weight: 300
+    color: $font-color-second
+    &:hover
+      color: $font-color-second
+.header
+  width: 100%
+  height: auto
+  background-color: #ffffff
+  position: fixed
+  z-index: 1000
+  transition: .5s all
+  box-shadow: 0px 1px 10px 1px #00000035
+  &-row
+    height: 90px
+    transition: .5s all
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      z-index: -1
+      top: 0
+      left: -300%
+      width: 330%
+      height: 100%
+      background-color: $font-color-main
+      transform: skewX(45deg)
+    &_scroll
+      height: 60px
+  &__logo
+    z-index: 2
+    font-size: 30px
+    &__link
+      transition: .5s all
+      &_scroll
+        font-size: 26px
+  &__social-networks__link
+    color: $font-color-third
+    font-size: 20px
+    margin: 0 10px
+    transition: .2s all
+    &:hover
+      color: $font-color-main
+  &-line
+    position: absolute
+    z-index: 1
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $font-color-main
+    transform: skewX(45deg)
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 50%
+        height: 100%
+        transform: skewX(-45deg)
+        background-color: $font-color-main
+  &__nav-link
+    color: $font-color-third
+    transition: 0.2s all
+    font-size: 16px
+    margin: 0 15px
+    &:hover
+      color: $font-color-main
+    &_active
+      color: $font-color-main
+      font-size: 16px
+      cursor: default
+      &:hover
+        color: $font-color-main
+.burger-networks__link
+  font-size: 20px
+  color: $font-color-second
+  margin:0 10px
+  margin-top: 20px
+.burger-logo
+  width: 100px
+  margin: 20px
+.burger-menu
+  display: none
+.burger-icon,
+.burger-icon:before,
+.burger-icon:after
+  width: 35px
+  height: 4px
+  background-color: $font-color-third
+  display: block
+  content: ""
+  transition: all 0.3s
+.burger-icon:before
+  transform: translateY(-8px)
+  
+
+.burger-icon:after
+  transform: translateY(4px)
+
+.menu
+  position: fixed
+  top: 0
+  right: -300px
+  width: 300px
+  height: 100%
+  background-color: $font-color-third
+  z-index: 998
+  transition: right 0.3s
+  overflow: hidden
+  padding-top: 70px
+  box-shadow: 2px 1px 20px 10px #00000035
+.menu ul
+  list-style: none
+  padding: 0px
+.menu ul li
+  border-top: 1px solid #ffffff3d
+  padding: 10px 30px
+  margin: 0
+  position: relative
+  &:last-child
+    border-bottom: 1px solid #ffffff3d
+
+    
+.menu ul li a
+  color: #ffffff
+  text-decoration: none
+  font-size: 18px
+  font-weight: 300
+  padding: 0
+  margin: 0
+.burger-active
+  &::before
+    content: ''
+    width: 10px
+    height: 100%
+    position: absolute
+    left: 0
+    background-color: $font-color-second
+    top: 0
+.menu-open
+  right: 0px
+  background-color: $font-color-second
+
+.menu-open .burger-icon
+  background-color: transparent
+
+.menu-open .burger-icon:before
+  transform: translateY(0px) rotate(45deg)
+  background-color: $font-color-second
+.menu-open .burger-icon:after
+  transform: translateY(-3px) rotate(-45deg)
+  background-color: $font-color-second
+.main-btn
+  @include main-btn
+.slider
+    height: auto
+    &-item
+        height: 920px
+        position: relative
+    &-img
+        object-fit: cover
+        object-position: center
+        width: 100%
+        min-height: 100%
+    &-text
+      height: 100%
+      text-align: left
+      padding-top: 400px
+    &-h2
+      font-size: 70px
+      color: #fff
+    &-p
+      font-size: 18px
+      font-weight: 300
+    &-btn
+      margin-top: 30px
+.title-h2
+  @include text-h2
+.title-h3
+  @include text-h3
+.category
+  padding: 50px 0
+  &-icon
+    font-size: 40px
+  .nav-link
+    border-radius: 50px
+    border: 2px solid $font-color-main
+    margin: 5px 10px
+  &-h2
+    @include text_h2
+  &-link
+    color: $font-color-third
+    border: 1px solid #000
+    display: block
+    width: 80px
+    height: 80px
+    border-radius: 50px
+    text-align: center
+    &:hover
+      color: $font-color-second
+      background-color: $font-color-main
+.nav-pills .nav-link.active
+  color: $font-color-second
+  background-color: $font-color-main
+  border-radius: 50px
+.nav-text
+  display: block
+  text-align: center
+  font-size: 14px
+  font-weight: 300
+  color: $font-color-third
+.nav-pills
+  display: flex
+  flex-wrap: nowrap
+  overflow-x: auto
+  cursor: grab
+  &::-webkit-scrollbar
+    display: none
+.product-item
+  width: 100%
+  height: auto
+  padding: 15px
+  box-shadow: 0px 1px 10px 1px #00000035
+  margin: 15px 0
+  border-radius: 10px
+  transition: 0.3s
+  &:hover
+    transform: scale(1.05)
+    box-shadow: 0px 1px 30px 1px #00000035
+.product-img
+  width: 100%
+  min-height: 300px
+  max-height: 300px
+  object-fit: contain
+  height: auto
+  background-color: $font-color-second
+.product-name
+  display: block
+  text-align: center
+  color: $font-color-third
+  font-size: 20px
+  font-weight: 500
+.product-price
+  display: block
+  text-align: center
+  color: $font-color-main
+  font-size: 20px
+  font-weight: 500
+.category-mobil
+  display: none
+  padding: 50px 0 
+.category-m-link
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  height: auto
+  padding:35px 0
+  background-color: $font-color-second
+  box-shadow: 0px 1px 10px 1px #00000035
+  margin-bottom: 20px
+  text-align: center
+.category-m-name
+  font-size: 20px
+  color: $font-color-main
+  margin:0 20px
+  width: 100%
+  font-weight: 300
+.category-m-icon
+  font-size: 50px
+  color: $font-color-main
+  width: 100%
+  margin-bottom: 20px
+.advantage
+  height: auto!important
+  padding: 50px 0
+  &__background
+    background: linear-gradient(rgba(0, 0, 0, 0.804), rgba(0, 0, 0, 0.613)), url(../img/background_meat.jpg)
+    background-repeat: repeat !important
+  &-item
+    position: relative
+    text-align: center
+    width: 250px
+    height: 250px
+    border-top: 2px solid $font-color-second
+    border-bottom: 2px solid $font-color-second
+    transition: .3s all
+    padding-top: 50px
+    &:hover
+      background-color: $font-color-main
+      border: 2px solid #00000000
+    &::before
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+      right: 0
+      border-left: 2px solid $font-color-second
+      border-right: 2px solid $font-color-second
+      height: 40%
+      transition: .3s all
+    &::after
+      content: ""
+      position: absolute
+      left: 0
+      bottom: 0
+      right: 0
+      border-left: 2px solid $font-color-second
+      border-right: 2px solid $font-color-second
+      height: 40%
+      transition: .3s all
+    &:hover::after
+      border: none
+      transition: .3s all
+    &:hover::before
+      border: none
+      transition: .3s all
+  &-icon
+    position: relative
+    font-size: 60px
+    z-index: 2
+    color: $font-color-second
+  &-text 
+    color: $font-color-second
+    font-size: 20px
+    margin-top: 30px
+    font-weight: 100
+.about-us
+  height: auto!important
+  padding: 50px 0
+  &-btn
+    margin-top: 30px
+  &-text
+    font-size: 20px
+    font-weight: 300
+    color: $font-color-third
+  &-img
+    width: 100%
+    height: 400px
+    object-fit: cover
+  &__background
+    background: linear-gradient(rgba(0, 0, 0, 0.693), rgba(0, 0, 0, 0.52)), url(../img/background_meat1.jpeg)
+    background-repeat: repeat !important
+  &-content
+    width: 100%
+    padding: 30px
+    background-color: $font-color-second
+  &-h2
+.link-line
+  width: 100%
+  height: auto
+  padding: 30px 0
+  background-color: $font-color-main
+  &-btn
+    display: block
+    text-align: center
+    color: $font-color-main
+    background-color: $font-color-second
+    font-size: 20px
+    padding: 15px 30px
+    transition: .3s all
+    &:hover
+      color: $font-color-second
+      background-color: $font-color-third
+  &-text
+    color: $font-color-second
+    font-size: 40px
+    font-weight: 300
+.accordion
+  padding: 50px 0
+  &-btn
+    background-color: $font-color-second
+    color: $font-color-third
+    cursor: pointer
+    padding: 18px
+    width: 100%
+    border: none
+    text-align: left
+    outline: none
+    font-size: 15px
+    transition: 0.4s
+    box-shadow: 0px 1px 5px 1px #00000035
+    border-radius: 5px
+  &-item
+    margin: 10px 0 
+    border: none
+.accordion-active, .accordion-btn:hover 
+  background-color: $font-color-main
+  color: $font-color-second
+.accordion-btn:after 
+  content: '+'
+  color: $font-color-third
+  font-weight: bold
+  float: right
+  margin-left: 5px
+  font-size: 14px
+.accordion-btn:hover:after
+  color: $font-color-second
+.accordion-active:after 
+  content: "-"
+  color: $font-color-second
+.panel 
+  padding: 0 20px
+  max-height: 0
+  overflow: hidden
+  transition: max-height 0.2s ease-out
+  box-shadow: 0px 1px 10px 1px #00000035
+.panel p
+  margin-top: 20px
+.contacts
+  padding:50px 0
+  &-h2
+  &-info
+    display: flex
+  &-item
+    text-align: center
+    margin: 40px 0
+  &-icon
+    font-size: 40px
+    margin: 10px 0
+  &-name
+    font-size: 20px
+    color: $font-color-main
+    font-weight: 500
+    margin: 20px 0
+  &-text
+    font-size: 14px
+    color: #000
+    font-weight: 300
+    margin: 20px 0
+  &-btn
+  &-map
+    border: 0
+    width: 100%
+    height: 100%
+
+.footer
+  &-main
+    padding: 30px 0
+    background-color: $font-color-third
+  &-bottom
+    padding: 20px 0
+    background-color: #0b0b0b
+  &-copyright
+  color: $font-color-second
+  font-size: 14px
+  font-weight: 100
+  &-logo
+    width: 140px
+    height: auto
+  &-nav
+    display: inline
+    margin: 0
+  &__nav-link
+    color: $font-color-second
+    font-size: 14px
+    font-weight: 100
+    margin: 5px 20px
+    &:hover
+      color: $font-color-main
+  &-icon
+    color: $font-color-second
+    font-size: 14px
+    margin-right: 3px
+  &-name
+    color: $font-color-second
+    font-size: 16px
+    font-weight: 500
+  &__social-networks
+    display: flex
+    flex-direction: column
+    &__link
+      color: $font-color-second
+      &:hover
+        color: $font-color-main
