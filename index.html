@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Nasha-ferma.com</title>
+      <!--Google fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+      <!-- Vendor CSS Files -->
+      <!--bootstrap css-->
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!--icomoon fonts css-->
+      <link rel="stylesheet" href="assets/css/font.css">
+      <!--aos css-->
+      <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+      <!--css-->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+  </head>
+  <body>
+    <div class="preloader" id="preloader">
+      <div class="lds-dual-ring"></div>
+    </div>
+    <!--header-->
+    <header class="header">
+        <div class="container">
+          <div id="headerScroll" class="row align-items-center header-row">
+
+            <div class="col-lg-4 col-9">
+              <div class="logo header__logo">
+                <a class="logo__link header__logo__link" href="index.html" id="logo">Наша Ферма</a>
+              </div>
+            </div>
+            <div class="col-5">
+              <nav>
+                <ul class="nav">
+                  <li><a class="nav-link header__nav-link header__nav-link_active">Головна</a></li>
+                  <li><a class="nav-link header__nav-link" href="product/index.html">Продукція</a></li>
+                  <li><a class="nav-link header__nav-link" href="about-us/index.html">Про нас</a></li>
+                  <li><a class="nav-link header__nav-link" href="contacts/index.html">Контакти</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-3 align-self-center header-social">
+              <div class="social-networks d-flex justify-content-center">
+                <a class="social-networks__link header__social-networks__link" href="#"><span class="icon-instagram1"></span></a>
+                <a class="social-networks__link header__social-networks__link" href="#"><span class="icon-telegram"></span></a>
+                <a class="social-networks__link header__social-networks__link" href="#"><span class="icon-viber"></span></a>
+                <a class="social-networks__link header__social-networks__link" href="#"><span class="icon-whatsapp"></span></a>
+                <a class="social-networks__link header__social-networks__link" href="#"><span class="icon-facebook"></span></a>               
+              </div> 
+            </div>
+          </div>
+          <!--burger menu-->
+          <div class="container">
+            <button id="toggleBtn" class="burger-menu">
+              <span class="burger-icon"></span>
+            </button>
+            <div id="menu" class="menu">
+              <img src="assets/img/logo.png" alt="logo" class="burger-logo">
+              <ul>
+                <li><a class="burger-active">Головна</a></li>
+                <li><a href="product/index.html">Продукція</a></li>
+                <li><a href="about-us/index.html">Про нас</a></li>
+                <li><a href="contacts/index.html">Контакти</a></li>
+              </ul>
+              <div class="social-networks d-flex justify-content-center">
+                <a class="social-networks__link burger-networks__link" href="#"><span class="icon-instagram1"></span></a>
+                <a class="social-networks__link burger-networks__link" href="#"><span class="icon-telegram"></span></a>
+                <a class="social-networks__link burger-networks__link" href="#"><span class="icon-viber"></span></a>
+                <a class="social-networks__link burger-networks__link" href="#"><span class="icon-whatsapp"></span></a>
+                <a class="social-networks__link burger-networks__link" href="#"><span class="icon-facebook"></span></a>               
+              </div> 
+            </div>
+          </div>
+        </div>
+
+    </header>
+    <main>
+      <!--up arrow-->
+      <section>
+        <a href="#" id="upArrow" class="up-arrow">
+          <span class="icon-keyboard_arrow_up"></span>
+        </a>
+      </section>
+        <!--section auto slider-->
+      <section id="carouselExampleFade" class="carousel slide carousel-fade slider" data-ride="carousel" >
+        <div class="carousel-inner">
+          <div class="carousel-item slider-item active" data-bs-interval="5000" >
+            <img src="assets/img/background_meat1.jpeg" class="slider-img" alt="...">
+            <div class="carousel-caption slider-text" data-aos="fade-up">
+              <h1 class="slider-h2" >Наша Ферма</h1>
+              <span class="slider-p">Купуй тільки якісне м'ясо</span><br>
+              <a href="about-us/index.html" class="main-btn slider-btn">Про нас</a>
+            </div>
+          </div>
+          <div class="carousel-item slider-item" data-bs-interval="5000">
+            <img src="assets/img/pexels-becerra-govea-photo-5774158.jpeg" class="slider-img" alt="...">
+            <div class="carousel-caption slider-text">
+              <h2 class="slider-h2">Свіже м'ясо</h2>
+              <span class="slider-p">Обирай найкраще</span><br>
+              <a href="product/index.html" class="main-btn slider-btn">Наша продукція</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </section>
+            <!--section category-->
+      <section class="category-mobil" data-aos="fade-up">
+        <div class="container">
+          <h3 class="title-h3 category-h3">Наша продукція</h3>
+          <h2 class="title-h2 category-h2">Категорії</h2>
+          <div class="row">
+            <div class="col-6 col-lg-4">
+              <a class="category-m-link" href="product/index.html">
+                <span class="icon-chicken category-m-icon"></span>
+                <span class="category-m-name">
+                  Курятина
+                </span>
+              </a>
+            </div>
+
+            <div class="col-6 col-lg-4">
+              <a class="category-m-link" href="product/index.html">
+                <span class="icon-pig category-m-icon"></span>
+                <span class="category-m-name">
+                  Свинина
+                </span>
+              </a>
+            </div>
+
+            <div class="col-6 col-lg-4">
+              <a class="category-m-link" href="product/index.html">
+                <span class="icon-turkey category-m-icon"></span>
+                <span class="category-m-name">
+                  Індичатина
+                </span>
+              </a>
+            </div>
+
+            <div class="col-6">
+              <a class="category-m-link" href="product/index.html">
+                <span class="icon-rabbit category-m-icon"></span>
+                <span class="category-m-name">
+                  Крольчатина
+                </span>
+              </a>
+            </div> 
+            <div class="col-6">
+              <a class="category-m-link" href="product/index.html">
+                <span class="icon-sausage category-m-icon"></span>
+                <span class="category-m-name">
+                  Ковбаси
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--section advantage-->
+      <section class="lux advantage" data-direction="bottom" data-aos="fade-up">
+            <div class="lux-bg advantage__background"></div>
+          <div class="container">
+              <div class="row d-flex justify-content-center">
+                <!--item 1-->
+                <div class="col-6 col-md-3">
+                  <div class="advantage-item">
+                    <span class="icon-checked advantage-icon"></span>
+                    <h3 class="advantage-text">Відмінна<br>якість</h3>
+                  </div>
+                </div>  
+                <!--item 2-->
+                <div class="col-6 col-md-3">
+                  <div class="advantage-item">
+                    <span class="icon-people advantage-icon"></span>
+                    <h3 class="advantage-text">Багато<br>клієнтів</h3>
+                  </div>
+                </div>  
+                <!--item 2-->
+                <div class="col-6 col-md-3">
+                  <div class="advantage-item">
+                    <span class="icon-price-tag advantage-icon"></span>
+                    <h3 class="advantage-text">Доступні<br>ціни</h3>
+                  </div>
+                </div>  
+                <!--item 2-->
+                <div class="col-6 col-md-3">
+                  <div class="advantage-item">
+                    <span class="icon-knife advantage-icon"></span>
+                    <h3 class="advantage-text">Якісна<br>обробка</h3>
+                  </div>
+                </div>  
+              </div>
+          </div>
+      </section>
+      <!--section accordion faq-->
+      <section class=" accordion" data-aos="fade-up">
+        <div class="container">
+          <h3 class="title-h3">Поширені запитання</h3>
+          <h2 class="title-h2 contacts-h2">Питання - відповіді</h2>
+        <div class="accordion-item">
+          <button class="accordion-btn">Section 1</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn">Section 1</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn">Section 1</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        </div>
+      </section>
+      <!--section about us-->
+      <section class="lux about-us" data-direction="bottom" data-aos="fade-up">
+        <div class="lux-bg about-us__background"></div>
+        <div class="container">
+            <div class="row">
+              <div class="about-us-content col-12">
+                <div class="row p-4">
+                  <div class="col-12 col-lg-6">
+                    <h3 class="title-h3 about-us-h3">Наша Ферма</h3>
+                    <h2 class="title-h2 about-us-h2">Про нас</h2>
+                    <span class="about-us-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Esse dolore iste optio voluptatibus, earum a, ab consequatur, 
+                      pariatur quod modi dolorum tempora similique voluptas id est accusamus 
+                      magnam atque in ratione! Possimus saepe quae inventore aliquid veritatis 
+                      sequi neque ab pariatur excepturi ipsum, quaerat beatae perferendis earum 
+                      magni. Ut, velit?
+                    </span><br>
+                    <a href="#" class="main-btn about-us-btn">Чиати більше </a>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="3000">
+                          <img src="assets/img/products/IMG_0303.JPG" class="d-block w-100 about-us-img" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                          <img src="assets/img/products/IMG_0288.JPG" class="d-block w-100 about-us-img" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                          <img src="assets/img/products/IMG_0330.JPG" class="d-block w-100 about-us-img" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                          <img src="assets/img/products/IMG_0306.JPG" class="d-block w-100 about-us-img" alt="...">
+                        </div>
+                      </div>
+                     <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+      </section>
+      <!--section link line-->
+      <section class="link-line" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-7">
+              <span class="link-line-text">Є запитання?</span>
+            </div>
+            <div class="col-5">
+              <a class="link-line-btn" href="contacts/index.html">Написати нам</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--section contacts-->
+      <section class="contacts" data-aos="fade-up">
+          <div class="container">
+              <h3 class="title-h3">Як з нами звязатися</h3>
+              <h2 class="title-h2 contacts-h2">Контакти</h2>
+            <div class="row">
+              <div class="contacts-info col-12 col-lg-6">
+                <div class="row">
+                  <div class=" col-6">
+                    <div class="contacts-item">
+                      <span class="icon-location contacts-icon"></span><br>
+                      <span class="contacts-name">Адреса</span><br>
+                      <span class="contacts-text">Lorem ipsum dolor sit.</span>
+                    </div>
+                  </div>
+  
+                  <div class=" col-6">
+                    <div class="contacts-item">
+                      <span class="icon-mail-envelope-closed contacts-icon"></span><br>
+                      <span class="contacts-name">Gmail</span><br>
+                      <span class="contacts-text">nasha-ferma.com</span>
+                    </div>
+                  </div>
+  
+                  <div class=" col-6">
+                    <div class="contacts-item">
+                      <span class="icon-clock contacts-icon"></span><br>
+                      <span class="contacts-name">Графік роботи</span><br>
+                      <span class="contacts-text">ПН-ПТ: 09:00-18:00<br>СБ: 09:00-15:00<br>НД: Вихідний</span>
+                    </div>
+                  </div>
+  
+                  <div class=" col-6">
+                    <div class="contacts-item">
+                      <span class="icon-phone contacts-icon"></span><br>
+                      <span class="contacts-name">Телефон</span><br>
+                      <span class="contacts-text">+380983309232<br>+380983309232</span>
+                    </div>
+                  </div>
+                </div>  
+                </div>
+              
+               
+                <!--
+                  if we need button:
+
+                  <div class="col-12">            
+                    <a href="#" class="btn contacts-btn">Читати більше </a>
+                </div>
+                -->
+
+              <div class="col-12 col-lg-6">
+                <iframe class="contacts-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20308.284782701114!2d30.424420754351097!3d50.48698873759385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cd981d377bd9%3A0xa785750d36e9fe63!2z0JrRg9GA0LXQvdGR0LLQutCwLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1689599297634!5m2!1sru!2sua" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 col-12">
+              <div class="footer-logo">
+                <a href="index.html">
+                  <img class="footer-img" src="assets/img/logo.png" alt="">
+                  <a class="logo__link footer__logo__link" href="index.html" id="logo">Наша Ферма</a>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 p-0">
+              <div class="footer-contacts">
+                  <a class="social-networks__link footer__social-networks__link" href="#"><span class="icon-instagram1"></span></a>
+                  <a class="social-networks__link footer__social-networks__link" href="#"><span class="icon-telegram"></span></a>
+                  <a class="social-networks__link footer__social-networks__link" href="#"><span class="icon-viber"></span></a>
+                  <a class="social-networks__link footer__social-networks__link" href="#"><span class="icon-whatsapp"></span></a>
+                  <a class="social-networks__link footer__social-networks__link" href="#"><span class="icon-facebook"></span></a>                              
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="footer-nav">
+                  <a class="nav-link footer__nav-link" href="index.html">Головна</a>
+                  <a class="nav-link footer__nav-link" href="product/index.html">Продукція</a>
+                  <a class="nav-link footer__nav-link" href="about-us/index.html">Про нас</a>
+                  <a class="nav-link footer__nav-link" href="contacts/index.html">Контакти</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <span class="footer-copyright">
+            © Наша Ферма 2023
+          </span>
+        </div>
+        
+      </div>
+    </footer>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--bootstrap js-->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Lux js (Parallax)-->
+    <script src="assets/vendor/lux/lux.min.js"></script>
+    <!--aos js-->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <!--js-->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

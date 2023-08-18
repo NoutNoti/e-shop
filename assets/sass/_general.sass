@@ -1,0 +1,783 @@
+html
+  scroll-behavior: smooth
+body
+  font-family: $font-family-main
+a
+  text-decoration: none
+  &:hover
+    text-decoration: none
+ul, li
+  margin: 0
+  padding: 0
+.product-row
+  min-width: 1140px
+.nav-link
+  padding: 0
+  margin: 0
+.up-arrow
+  position: fixed
+  width: 50px
+  height: 50px
+  bottom: 20px
+  right: -100px
+  background-color: $font-color-main
+  cursor: pointer
+  z-index: 900
+  transition: .3s all
+  color: $font-color-second
+  font-size: 35px
+  text-align: center
+  align-items: center
+  border-radius: 5px
+  &:hover
+    opacity: 1
+    color: $font-color-second
+    text-decoration: none
+.up-arrow_active
+  position: fixed
+  width: 50px
+  height: 50px
+  bottom: 20px
+  right: 20px
+  background-color: $font-color-main
+  cursor: pointer
+  z-index: 900
+  transition: .5s all
+  opacity: 0.6
+  &:hover
+    opacity: 1
+    color: $font-color-second
+    text-decoration: none
+.logo
+  font-size: 20px
+  &__link
+    font-weight: 300
+    color: $font-color-second
+    &:hover
+      color: $font-color-second
+.header
+  width: 100%
+  height: auto
+  background-color: #ffffff
+  position: fixed
+  top: 0
+  z-index: 999
+  transition: .5s all
+  box-shadow: 0px 1px 10px 1px #00000035
+  &-row
+    height: 90px
+    transition: .5s all
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      z-index: -1
+      top: 0
+      left: -300%
+      width: 330%
+      height: 100%
+      background-color: $font-color-main
+      transform: skewX(45deg)
+    &_scroll
+      height: 60px
+  &__logo
+    z-index: 2
+    font-size: 30px
+    &__link
+      transition: .5s all
+      &_scroll
+        font-size: 26px
+  &__social-networks__link
+    color: $font-color-third
+    font-size: 20px
+    margin: 0 10px
+    transition: .2s all
+    &:hover
+      color: $font-color-main
+  &-line
+    position: absolute
+    z-index: 1
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $font-color-main
+    transform: skewX(45deg)
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 50%
+        height: 100%
+        transform: skewX(-45deg)
+        background-color: $font-color-main
+  &__nav-link
+    color: $font-color-third
+    transition: 0.2s all
+    font-size: 16px
+    margin: 0 15px
+    &:hover
+      color: $font-color-main
+    &_active
+      color: $font-color-main
+      font-size: 16px
+      cursor: default
+      &:hover
+        color: $font-color-main
+.burger-networks__link
+  font-size: 20px
+  color: $font-color-second
+  margin:0 10px
+  margin-top: 20px
+.burger-logo
+  width: 100px
+  margin: 20px
+.burger-menu
+  display: none
+.burger-icon
+  width: 25px
+  height: 4px
+  background-color: $font-color-third
+  display: block
+  transition: all 0.4s
+  border-radius: 5px
+.burger-icon:before,
+.burger-icon:after
+  width: 35px
+  height: 4px
+  background-color: $font-color-third
+  display: block
+  content: ""
+  position: relative
+  right: 9px
+  transition: all 0.4s
+  border-radius: 5px
+.burger-icon:before
+  transform: translateY(-8px)
+  
+
+.burger-icon:after
+  transform: translateY(4px)
+
+.menu
+  position: fixed
+  top: 0
+  right: -300px
+  width: 300px
+  height: 100%
+  background-color: $font-color-third
+  z-index: 998
+  transition: right 0.3s
+  overflow: hidden
+  padding-top: 70px
+  box-shadow: 2px 1px 20px 10px #00000035
+  overflow: scroll
+.menu ul
+  list-style: none
+  padding: 0px
+.menu ul li
+  text-align: center
+  padding: 10px 30px
+  margin: 0
+  position: relative  
+  color: $font-color-second
+.menu ul li a
+  color: #ffffff
+  text-decoration: none
+  font-size: 18px
+  font-weight: 300
+  padding: 0
+  margin: 0
+  color: $font-color-second
+.burger-active
+  &::before
+    content: ''
+    width: 40px
+    height: 90%
+    position: absolute
+    left: 0
+    background-color: $font-color-main
+    top: 0
+    border-radius:0px 10px 10px 0px
+  
+.menu-open
+.menu-open
+  right: 0px
+  background-color: $font-color-second
+
+.menu-open .burger-icon
+  background-color: transparent
+
+.menu-open .burger-icon:before
+  transform: translateY(0px) rotate(45deg)
+  background-color: $font-color-second
+.menu-open .burger-icon:after
+  transform: translateY(-3px) rotate(-45deg)
+  background-color: $font-color-second
+.main-btn
+  @include main-btn
+.slider
+    height: auto
+    &-item
+        height: 920px
+        position: relative
+    &-img
+        object-fit: cover
+        object-position: center
+        width: 100%
+        min-height: 100%
+        filter: brightness(55%)
+    &-text
+      height: 100%
+      text-align: left
+      padding-top: 400px
+    &-h2
+      font-size: 70px
+      color: #fff
+    &-p
+      font-size: 18px
+      font-weight: 300
+    &-btn
+      margin-top: 30px
+.title-h2
+  @include text-h2
+.title-h3
+  @include text-h3
+.category
+  padding: 50px 0
+  &-icon
+    font-size: 40px
+  .nav-link
+    border-radius: 50px
+    border: 2px solid $font-color-main
+    margin: 5px 10px
+  &-h2
+    @include text_h2
+  &-link
+    color: $font-color-third
+    border: 1px solid #000
+    display: block
+    width: 80px
+    height: 80px
+    border-radius: 50px
+    text-align: center
+    &:hover
+      color: $font-color-second
+      background-color: $font-color-main
+.nav-pills .nav-link.active
+  color: $font-color-second
+  background-color: $font-color-main
+  border-radius: 50px
+.nav-text
+  display: block
+  text-align: center
+  font-size: 14px
+  font-weight: 300
+  color: $font-color-third
+.nav-pills
+  display: flex
+  flex-wrap: nowrap
+  overflow-x: auto
+  cursor: grab
+  &::-webkit-scrollbar
+    display: none
+.product-item
+  min-width: 100%
+  width: auto
+  display: block
+  height: auto
+  padding: 0px
+  box-shadow: 0px 1px 10px 1px #00000035
+  margin: 15px 0
+  border-radius: 10px
+  transition: 0.3s
+  overflow: hidden
+  padding-bottom: 15px
+  &:hover
+    transform: scale(1.05)
+    box-shadow: 0px 1px 30px 1px #00000035
+.product-img
+  width: 100%
+  min-width: 200px
+  height: 200px
+  object-fit: contain
+  padding-bottom: 15px
+  background-color: $font-color-second
+  object-fit: cover
+  object-position: center
+.product-name
+  display: block
+  text-align: center
+  color: $font-color-third
+  font-size: 20px
+  font-weight: 500
+.product-price
+  display: block
+  text-align: center
+  color: $font-color-main
+  font-size: 20px
+  font-weight: 500
+.category-mobil
+  display: block
+  padding: 50px 0 
+.category-m-link
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  height: auto
+  padding:35px 0
+  background-color: $font-color-second
+  box-shadow: 0px 1px 10px 1px #00000035
+  margin-bottom: 20px
+  text-align: center
+  transition: .3s
+  &:hover
+    transform: scale(1.05)
+.category-m-name
+  font-size: 20px
+  color: $font-color-main
+  margin:0 20px
+  width: 100%
+  font-weight: 300
+.category-m-icon
+  font-size: 50px
+  color: $font-color-main
+  width: 100%
+  margin-bottom: 20px
+.advantage
+  height: auto!important
+  padding: 50px 0
+  &__background
+    background: linear-gradient(rgba(0, 0, 0, 0.693), rgba(0, 0, 0, 0.52)), url(../img/background_meat1.jpeg)
+    background-repeat: repeat !important
+  &-item
+    position: relative
+    text-align: center
+    width: 250px
+    height: 250px
+    border-top: 2px solid $font-color-second
+    border-bottom: 2px solid $font-color-second
+    transition: .3s all
+    padding-top: 50px
+    &:hover
+      transform: scale(1.1)
+    &::before
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+      right: 0
+      border-left: 2px solid $font-color-second
+      border-right: 2px solid $font-color-second
+      height: 40%
+      transition: .3s all
+    &::after
+      content: ""
+      position: absolute
+      left: 0
+      bottom: 0
+      right: 0
+      border-left: 2px solid $font-color-second
+      border-right: 2px solid $font-color-second
+      height: 40%
+      transition: .3s all
+  &-icon
+    position: relative
+    font-size: 60px
+    z-index: 2
+    color: $font-color-second
+  &-text 
+    color: $font-color-second
+    font-size: 20px
+    margin-top: 30px
+    font-weight: 100
+.about-us
+  height: auto!important
+  padding: 50px 0
+  &-btn
+    margin-top: 30px
+  &-text
+    font-size: 20px
+    font-weight: 300
+    color: $font-color-third
+  &-img
+    width: 100%
+    height: 400px
+    object-fit: cover
+  &__background
+    background: linear-gradient(rgba(0, 0, 0, 0.804), rgba(0, 0, 0, 0.613)), url(../img/pexels-becerra-govea-photo-5774158.jpeg)
+    height: 200vh !important
+  &-content
+    width: 100%
+    padding: 30px
+    background-color: $font-color-second
+  &-h2
+.link-line
+  width: 100%
+  height: auto
+  padding: 30px 0
+  background-color: $font-color-main
+  &-btn
+    display: block
+    text-align: center
+    color: $font-color-main
+    background-color: $font-color-second
+    font-size: 20px
+    padding: 15px 30px
+    transition: .3s all
+    &:hover
+      color: $font-color-second
+      background-color: $font-color-third
+  &-text
+    color: $font-color-second
+    font-size: 40px
+    font-weight: 300
+.accordion
+  padding: 50px 0
+  &-btn
+    background-color: $font-color-second
+    color: $font-color-third
+    cursor: pointer
+    padding: 18px
+    width: 100%
+    border: none
+    text-align: left
+    outline: none
+    font-size: 15px
+    transition: 0.4s
+    box-shadow: 0px 1px 5px 1px #00000035
+    border-radius: 5px
+  &-item
+    margin: 10px 0 
+    border: none
+.accordion-active, .accordion-btn:hover 
+  background-color: $font-color-main
+  color: $font-color-second
+.accordion-btn:after 
+  content: '+'
+  color: $font-color-third
+  font-weight: bold
+  float: right
+  margin-left: 5px
+  font-size: 14px
+.accordion-btn:hover:after
+  color: $font-color-second
+.accordion-active:after 
+  content: "-"
+  color: $font-color-second
+.panel 
+  padding: 0 20px
+  max-height: 0
+  overflow: hidden
+  transition: max-height 0.2s ease-out
+  box-shadow: 0px 1px 10px 1px #00000035
+.panel p
+  margin-top: 20px
+.contacts
+  padding:50px 0
+  &-h2
+  &-info
+    display: flex
+  &-item
+    text-align: center
+    margin: 40px 0
+  &-icon
+    font-size: 40px
+    margin: 10px 0
+  &-name
+    font-size: 20px
+    color: $font-color-main
+    font-weight: 500
+    margin: 20px 0
+  &-text
+    font-size: 14px
+    color: #000
+    font-weight: 300
+    margin: 20px 0
+  &-btn
+  &-map
+    border: 0
+    width: 100%
+    height: 100%
+
+.footer
+  &-main
+    background-color: $font-color-third
+    padding: 0px 0px
+  &-logo
+    display: flex
+    justify-content: left
+    padding: 10px
+    align-items: center
+    height: 150px
+  &__logo__link
+      font-size: 22px
+      margin: 5px
+  &-img
+    width: 100px
+  &-contacts
+    background-color: $font-color-main
+    padding: 20px 0px
+    margin: 0
+    height: 100%
+    align-items: center
+    display: flex
+    justify-content: center
+  &__social-networks__link
+    color: $font-color-third
+    font-size: 20px
+    transition: .3s all
+    margin: 0px 1%
+    background-color: $font-color-second
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 35px
+    height: 35px
+    border-radius: 50px
+    &:hover
+      transform: scale(1.2)
+      color: $font-color-third
+  &-nav
+    padding: 20px 0
+    height: 100%
+    width: 100%
+    align-items: center
+    display: flex
+    justify-content: center
+  &__nav-link
+    color: $font-color-second
+    font-size: 14px
+    margin: 1%
+    &:hover
+      color: $font-color-main
+  &-bottom
+    background-color: #000
+    padding: 20px 30px
+  &-copyright
+    color: $font-color-second
+    font-size: 16px
+    font-weight: 300
+.preloader
+  position: fixed
+  background-color: $font-color-second
+  align-items: center
+  display: flex
+  justify-content: center
+  width: 100%
+  height: 100%
+  z-index: 9999999
+  top: 0
+.lds-dual-ring
+  display: inline-block
+  width: 80px
+  height: 80px
+  &:after
+    content: " "
+    display: block
+    width: 64px
+    height: 64px
+    margin: 8px
+    border-radius: 50%
+    border: 6px solid $font-color-main
+    border-color:$font-color-main transparent $font-color-main transparent
+    animation: lds-dual-ring 1.2s linear infinite
+
+@keyframes lds-dual-ring
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)
+.top-title
+  height: 400px !important
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 50px
+.title-h1
+  position: relative
+  font-size: 50px
+  color: $font-color-second
+  text-align: center
+.top-background
+  background: linear-gradient(rgba(0, 0, 0, 0.804), rgba(0, 0, 0, 0.613)), url(../img/pexels-becerra-govea-photo-5774158.jpeg)
+  background-repeat: no-repeat !important
+.breadcrumb
+  background-color: #00000000
+  text-align: center
+  width: 100%
+  display: inline-block
+  &-link
+    color: $font-color-second
+    &:hover
+      color: $font-color-second
+  &-name
+    color: $font-color-second
+    margin: 0 3px
+.product-line
+  margin-bottom: 0px
+  border-bottom: 2px solid $font-color-third
+.about-us-numbers
+  padding-top: 70px
+  padding-bottom: 40px
+.numbers-item
+  padding:35px 20px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background-color: $font-color-second
+  box-shadow: 0px 1px 10px 1px #00000035
+  transition: .3s
+  margin-bottom: 30px
+.number-animation
+  font-size: 50px
+  color: $font-color-main
+  font-weight: 700
+  text-align: center
+.number-text
+  font-size: 18px
+  text-align: center
+.our-shop ul
+  list-style-type: none
+  margin: 20px 0
+.our-shop ul li
+  margin-bottom: 5px
+.our-shop span
+  color: $font-color-main
+  margin-right: 10px
+.our-shop
+  padding-top:0 50px
+  &-h2
+    color: $font-color-main
+    font-size: 40px
+    font-family: $font-family-second
+    font-weight: 500
+    margin: 20px 0
+  &-h3
+    font-size: 20px
+    color: $font-color-third
+    font-weight: 500
+    font-family: $font-family-second
+    font-weight: 100
+    margin: 20px 0
+.our-shop-img
+  width: 100%
+  height: 400px
+  object-fit: cover
+.contacts-group
+  padding: 40px 0
+.form
+  display: block
+  padding: 40px 30px
+  padding-top: 0
+  position: relative
+  width: 100%
+.form .btn
+  background-color: $font-color-main
+  color: $font-color-second
+  padding: 10px 20px
+  transition: .3s
+  margin-left: 5px
+  &:hover
+    transform: scale(1.05)
+    background-color: $font-color-third
+.form label
+  font-size: 20px
+  color: $font-color-third
+.form input
+  border: 2px solid $font-color-main
+  border-radius: 0
+  padding: 20px 10px
+  &:focus
+    box-shadow: none
+    border-color: $font-color-third
+.form textarea
+  border: 2px solid $font-color-main
+  border-radius: 0
+  min-height: 150px
+  max-height: 350px
+  &:focus
+    box-shadow: none
+    border-color: $font-color-third
+.contacts__social-networks__link
+  font-size: 40px
+  color: $font-color-third
+  margin:0 3%
+  transition: .3s
+  &:hover
+    color: $font-color-third
+    transform: scale(1.2)
+.big-map
+  width: 100%
+  height: 500px
+  border: none
+.contacts-group
+  &-item
+    height: 150px
+    box-shadow: 1px 1px 10px 1px #00000035
+    border-radius: 0px
+    margin: 0
+    padding: 0 20px 
+    transition: 0.3s all
+    margin-bottom: 30px
+    &:hover
+      transform: scale(1.05)
+  &-icon
+    font-size: 30px
+    background-color: $font-color-main
+    color: $font-color-second
+    padding: 10px
+    border-radius: 100px
+  &-name
+    font-size: 20px
+    font-weight: 700
+  &-text
+    font-size: 16px
+.error-message
+  color: $font-color-main
+  font-size: 14px
+.status-good
+  transition: .3s all
+  display: none
+  position: relative
+  top: 0
+  width: 100%
+  height: auto
+  overflow: hidden
+  background-color: $font-color-second
+  align-items: center
+  justify-content: center
+  margin-bottom: 50px
+  transition: 0.5s
+.loader-container
+  text-align: center
+
+.loader
+  width: 400px
+  height: 30px
+  background-color: #ddd
+  position: relative
+  margin: 0 auto
+  border-radius: 5px
+  margin: 20px 0
+.loader-fill
+  height: 100%
+  background-color: $font-color-main
+  border-radius: 5px
+  animation: fillAnimation 3s ease-in-out forwards
+
+.status
+  font-size: 34px
+  font-weight: bold
+  color: $font-color-third
+  opacity: 1
+  transition: opacity 0.5s ease-in-out
+  display: block
+@keyframes fillAnimation
+  0%
+    width: 0
+  100%
+    width: 100%
+

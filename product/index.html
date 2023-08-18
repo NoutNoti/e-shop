@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Nasha-ferma.com</title>
+      <!--Google fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+      <!-- Vendor CSS Files -->
+      <!--bootstrap css-->
+      <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!--icomoon fonts css-->
+      <link rel="stylesheet" href="../assets/css/font.css">
+      <!--aos css-->
+      <link rel="stylesheet" href="../assets/vendor/aos/aos.css">
+      <!--css-->
+      <link rel="stylesheet" type="text/css" href="../assets/css/style.min.css">
+  </head>
+  <body>
+    <div class="preloader" id="preloader">
+      <div class="lds-dual-ring"></div>
+    </div>
+    <header class="header">
+        <div class="container">
+          <div id="headerScroll" class="row align-items-center header-row">
+
+            <div class="col-lg-4 col-9">
+              <div class="logo header__logo">
+                <a class="logo__link header__logo__link" href="../index.html" id="logo">Наша Ферма</a>
+              </div>
+            </div>
+            <div class="col-5">
+              <nav>
+                <ul class="nav">
+                  <li><a class="nav-link header__nav-link" href="../index.html">Головна</a></li>
+                  <li><a class="nav-link header__nav-link header__nav-link_active">Продукція</a></li>
+                  <li><a class="nav-link header__nav-link" href="../about-us/index.html">Про нас</a></li>
+                  <li><a class="nav-link header__nav-link" href="../contacts/index.html">Контакти</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-3 align-self-center header-social">
+              <div class="social-networks d-flex justify-content-center">
+                <a class="social-networks__link header__social-networks__link" href="#"><span class="icon-instagram1"></span></a>
+                <a class="social-networks__link header__social-networks__link" href="#"><span class="icon-telegram"></span></a>
+                <a class="social-networks__link header__social-networks__link" href="#"><span class="icon-viber"></span></a>
+                <a class="social-networks__link header__social-networks__link" href="#"><span class="icon-whatsapp"></span></a>
+                <a class="social-networks__link header__social-networks__link" href="#"><span class="icon-facebook"></span></a>               
+              </div> 
+            </div>
+          </div>
+          <!--burger menu-->
+          <div class="container">
+            <button id="toggleBtn" class="burger-menu">
+              <span class="burger-icon"></span>
+            </button>
+            <div id="menu" class="menu">
+              <img src="../assets/img/logo.png" alt="logo" class="burger-logo">
+              <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li class="burger-active"><a>Продукція</a></li>
+                <li><a href="../about-us/index.html">Про нас</a></li>
+                <li><a href="../contacts/index.html">Контакти</a></li>
+              </ul>
+              <div class="social-networks d-flex justify-content-center">
+                <a class="social-networks__link burger-networks__link" href="#"><span class="icon-instagram1"></span></a>
+                <a class="social-networks__link burger-networks__link" href="#"><span class="icon-telegram"></span></a>
+                <a class="social-networks__link burger-networks__link" href="#"><span class="icon-viber"></span></a>
+                <a class="social-networks__link burger-networks__link" href="#"><span class="icon-whatsapp"></span></a>
+                <a class="social-networks__link burger-networks__link" href="#"><span class="icon-facebook"></span></a>               
+              </div> 
+            </div>
+          </div>
+        </div>
+
+    </header>
+    <main>
+      <!--up arrow-->
+      <section>
+        <a href="#" id="upArrow" class="up-arrow">
+          <span class="icon-keyboard_arrow_up"></span>
+        </a>
+      </section>
+      
+        <!--section top title-->
+      <section class="lux top-title" data-direction="bottom">
+        <div class="lux-bg top-background"></div>
+        <div class="container" data-aos="fade-up">
+          <div class="breadcrumb">
+            <a href="../index.html" class="breadcrumb-link">Головна</a>
+            <span class="breadcrumb-name">/</span>
+            <span class="breadcrumb-name">Продукція</span>
+          </div>
+          <h1 class="title-h1">Продукція</h1>
+        </div>
+      </section>
+      <!--section category-->
+      <section class="category" data-aos="fade-up"  data-aos-delay="150">
+        <div class="container">
+          <h3 class="title-h3 category-h3">Наша продукція</h3>
+          <h2 class="title-h2 category-h2">Категорії</h2>
+            <div class="row">
+              <div class="col-12">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link category-link active" data-toggle="pill" data-target="#pills-1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                      <span class="icon-pig category-icon"></span>
+                    </button>
+                    <span class="nav-text">Свинина</span>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link category-link" data-toggle="pill" data-target="#pills-2" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                      <span class="icon-chicken category-icon"></span>
+                    </button>
+                    <span class="nav-text">Курятина</span>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link category-link" data-toggle="pill" data-target="#pills-3" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                      <span class="icon-turkey category-icon"></span>
+                    </button>
+                    <span class="nav-text">Індичатина</span>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link category-link" data-toggle="pill" data-target="#pills-4" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                      <span class="icon-rabbit category-icon"></span>
+                    </button>
+                    <span class="nav-text">Крольчатина</span>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link category-link" data-toggle="pill" data-target="#pills-5" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                      <span class="icon-sausage category-icon"></span>
+                    </button>
+                    <span class="nav-text">Ковбаси</span>
+                  </li>
+
+                  <!--
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link category-link" data-toggle="pill" data-target="#pills-6" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                      <span class="icon-sausage category-icon"></span>
+                    </button>
+                    <span class="nav-text">Свинина</span>
+                  </li>
+                  
+                  -->
+                  
+                </ul>
+              </div>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-1" role="tabpanel">
+                  <div class="row product-row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img " src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-2" role="tabpanel">
+                  <div class="row product-row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-3" role="tabpanel">
+                  <div class="row product-row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-4" role="tabpanel">
+                  <div class="row product-row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-5" role="tabpanel">
+                  <div class="row product-row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-6" role="tabpanel">
+                  <div class="row product-row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-7" role="tabpanel">
+                  <div class="row product-row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-8" role="tabpanel">
+                  <div class="row product-row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-9" role="tabpanel">
+                  <div class="row product-row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                      <div class="product-item">
+                        <img class="product-img" src="../assets/img/products/IMG_0303 2.JPG" alt="">
+                        <span class="product-name">Курина тушка</span>
+                        <span class="product-price">150 грн/кг</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!--section link line-->
+      <section class="link-line product-line">
+        <div class="container">
+          <div class="row">
+            <div class="col-7">
+              <span class="link-line-text">Є запитання?</span>
+            </div>
+            <div class="col-5">
+              <a class="link-line-btn" href="../contacts/index.html">Написати нам</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 col-12">
+              <div class="footer-logo">
+                <a href="../index.html">
+                  <img class="footer-img" src="../assets/img/logo.png" alt="">
+                  <a class="logo__link footer__logo__link" href="../index.html" id="logo">Наша Ферма</a>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 p-0">
+              <div class="footer-contacts">
+                  <a class="social-networks__link footer__social-networks__link" href="#"><span class="icon-instagram1"></span></a>
+                  <a class="social-networks__link footer__social-networks__link" href="#"><span class="icon-telegram"></span></a>
+                  <a class="social-networks__link footer__social-networks__link" href="#"><span class="icon-viber"></span></a>
+                  <a class="social-networks__link footer__social-networks__link" href="#"><span class="icon-whatsapp"></span></a>
+                  <a class="social-networks__link footer__social-networks__link" href="#"><span class="icon-facebook"></span></a>                              
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="footer-nav">
+                  <a class="nav-link footer__nav-link" href="../index.html">Головна</a>
+                  <a class="nav-link footer__nav-link" href="../product/index.html">Продукція</a>
+                  <a class="nav-link footer__nav-link" href="../about-us/index.html">Про нас</a>
+                  <a class="nav-link footer__nav-link" href="../contacts/index.html">Контакти</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <span class="footer-copyright">
+            © Наша Ферма 2023
+          </span>
+        </div>
+        
+      </div>
+    </footer>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--bootstrap js-->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Lux js (Parallax)-->
+    <script src="../assets/vendor/lux/lux.min.js"></script>
+    <!--aos js-->
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <!--js-->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
